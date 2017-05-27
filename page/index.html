@@ -18,34 +18,50 @@
             <div><a href="#projekte">Erfahrung</a></div>
             <div><a href="#">HOME</a></div>
           </div>
-          <div id="headerTextBox">
-            <h1>Umsetzung auf hohen Niveau</h1>
-            <p>
-              wer ich bin <br>
-              woher ich komme <br>
-              was ich mache
-            </p>
-            <button id="hireButton"> I need this guy</button>
-          </div>
       </div>
     </header>
 
+    <div id="headerTextBox">
+      <h1>Umsetzung auf hohen Niveau</h1>
+      <p>
+         <br>
+        woher ich komme <br>
+        was ich mache
+      </p>
+
+    </div>
+
     <div id="projekte">
-        <div class="projekt projekt1Size projektHeroku"><h2>Projekte <br>auf Heroku</h2></div>
-        <div class="projekt projekt1Size projektGitHub"><h2>GitHub <br>Account</h2></div>
-        <div class="projekt projekt2Size projektFreeCodeCamp"><h2>FreeCodeCamp Account<h2></div>
-        <div class="projekt projekt2Size projektWordpress"><h2>Wordpress Seite</h2></div>
-        <div class="projekt projekt2Size"><h2></h2></div>
+        <div class="projekt projekt1Size projektHeroku">
+          <a href="/projekte/heroku.html" >Projekte <br>auf Heroku</a>
+        </div>
+
+        <div class="projekt projekt1Size projektGitHub">
+          <a href="https://github.com/derdrache" target="_blank">GitHub <br>Account</a>
+        </div>
+
+        <div class="projekt projekt2Size projektFreeCodeCamp">
+          <a href="https://www.freecodecamp.com/derdrache" target="_blank">FreeCodeCamp Account</a>
+        </div>
+
+        <div class="projekt projekt2Size projektWordpress">
+          <a>Wordpress Seite</a>
+        </div>
+
+        <div class="projekt projekt2Size">
+          <a>Lebenslauf?</a>
+        </div>
     </div>
 
     <div id="kontakt">
+      <h1>Lass uns etwas Großes erschaffen</h1>
 
-      <h1>Lass uns etwas großes erschaffen</h1>
 
       <div id="kontaktBox">
-        <p><label>DEIN NAME:</label><input></p>
-        <p><label>DEINE EMAIL: </label><input></p>
-        <p><label>DEINE NACHRICHT:</label><textarea></textarea></p>
+        <p><label >DEIN NAME:</label><input id="kontaktName"></p>
+        <p><label >DEINE EMAIL: </label><input type="email" id="kontaktEmail"></p>
+        <p><label>DEINE NACHRICHT:</label><textarea id="kontaktText"></textarea></p>
+        <button id="nachrichtSenden" onclick="submit();">senden</button>
       </div>
 
     </div>
@@ -53,7 +69,7 @@
     <footer>
       <p>Hier ist das Ende, aber nur für die Seite.</p>
     </footer>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="function.js"></script>
   </body>
 </html>
