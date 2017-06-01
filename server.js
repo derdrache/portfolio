@@ -8,5 +8,10 @@ const server = express()
     .use(bodyParser.json());
 
 
+server.post("/", function(req,res){
+  console.log(req.body)
+})
+
+
 
 server.listen(PORT, () => console.log("roger, we are online...."));
