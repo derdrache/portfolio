@@ -6,6 +6,7 @@ body{
 
 
 
+
 /* header */
 
 header img{
@@ -78,25 +79,28 @@ header img{
 /* Projekte */
 
 #projekte{
+
   width: 100%;
   height: 1000px;
   background-color: #1e2023;
   margin-top: 350px;
   position: relative;
-  z-index: 0;
+  overflow: hidden;
 }
 
 .projekt{
-  float: left;
+  float:left;
   height: 500px;
   border: 1px solid #383c43;
   border-right: none;
   cursor: pointer;
-  display: table;
+  perspective: 480px;
+  overflow: hidden;
+  padding-left:5%;
+  white-space: nowrap;
 }
 
 .projekt1Size{
-
   width: 25%;
 }
 
@@ -109,38 +113,29 @@ header img{
   background-color: gray;
 }
 
-.projekt a{
+.projekt p{
   color: white;
   font-size: 50px;
-  display: table-cell;
-  vertical-align: middle;
-  text-align:center;
-  transition: .3s all;
-  text-decoration: none;
-}
-
-.projekt a:hover{
-  font-size: 55px;
 
 }
-/*
-.projektHeroku:hover{
-  background-color: #9E7CC1;
+
+.cube{
+  position: absolute;
+
 }
 
-.projektGitHub:hover{
-  background-color: black;
+.cube-front{
+  top: 80px;
+  transition: top 1s, opacity 1s;
+
+
 }
 
-.projektFreeCodeCamp:hover{
-  background-color: darkgreen;
+.cube-bottom{
+  transition: 1s all;
+  top: 520px;
+  opacity: 0;
 }
-
-.projektWordpress:hover{
-  background-color: blue;
-}
-*/
-
 
 
 
@@ -148,6 +143,7 @@ header img{
 
 #kontakt{
   padding-top: 200px;
+  margin-bottom: 2%;
   position: relative;
   width: 100%;
   height: 900px;
