@@ -1,3 +1,26 @@
+const projekt={
+  "one" :{
+    "class": ".projektHeroku",
+    "url": "heroku.html"
+  },
+  "two": {
+    "class":".projektGitHub",
+    "url": "https://github.com/derdrache"
+  },
+  "three":{
+    "class":".projektFreeCodeCamp",
+    "url": "https://www.freecodecamp.com/derdrache"
+  },
+  "four":{
+    "class": ".projektWordpress",
+    "url": "http://programmieren-lernen.blog/"
+  },
+  "five":{
+    "class": ".projektLebenslauf",
+    "url": ""
+  }
+}
+
 $(document).ready(function(){
 
   function umdrehen(auswahl){
@@ -9,7 +32,7 @@ $(document).ready(function(){
 
     $(auswahl).mouseout(function(){
       $(auswahl+" .cube-front").css({"top":"80","opacity":"1"});
-      $(auswahl+" .cube-bottom").css({"top":"610","opacity": "0"});
+      $(auswahl+" .cube-bottom").css({"top":"450","opacity": "0"});
     })
   }
 
@@ -19,15 +42,19 @@ $(document).ready(function(){
     })
   }
 
-// funktionen auf alle felder ausweiten
 
-umdrehen(".projektHeroku");
-umdrehen(".projektGitHub");
-umdrehen(".projektFreeCodeCamp");
-umdrehen(".projektWordpress");
-umdrehen(".projektLebenslauf");
+// Aktivierung der Funktionen
+
+umdrehen(projekt.one.class);
+umdrehen(projekt.two.class);
+umdrehen(projekt.three.class);
+umdrehen(projekt.four.class);
+umdrehen(projekt.five.class);
 
 
-weiterleitung(".projektHeroku", "/projekte/heroku.html");
+$(".projektHeroku").click(function(){window.location.href = projekt.one.url})
+weiterleitung(projekt.two.class,projekt.two.url);
+weiterleitung(projekt.three.class, projekt.three.url);
+weiterleitung(projekt.four.class, projekt.four.url);
 
 })
