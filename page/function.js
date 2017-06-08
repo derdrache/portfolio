@@ -21,8 +21,6 @@ const projekt={
   }
 }
 
-$(document).ready(function(){
-
   function umdrehen(auswahl){
 
     $(auswahl).mouseover(function(){
@@ -56,5 +54,3 @@ $(".projektHeroku").click(function(){window.location.href = projekt.one.url})
 weiterleitung(projekt.two.class,projekt.two.url);
 weiterleitung(projekt.three.class, projekt.three.url);
 weiterleitung(projekt.four.class, projekt.four.url);
-
-})

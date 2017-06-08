@@ -202,7 +202,9 @@ header img{
   padding-left: 20%;
 }
 
+
 #herokuProjekte{
+  margin-top: 6%;
   width: 80%;
   height: 200px;
 }
@@ -211,7 +213,9 @@ header img{
   width: 20%;
   position: absolute;
   z-index: 0;
+  float: left;
 }
+
 
 .herokuProjekt{
   margin-left: 8px;
@@ -220,7 +224,17 @@ header img{
   height: 190px;
   position: relative;
   z-index: 1;
+  float: left;
+  cursor: pointer;
 }
+
+.herokuProjektBeschreibung{
+  padding-left: 25px;
+  float:left;
+}
+
+
+
 
 
 
