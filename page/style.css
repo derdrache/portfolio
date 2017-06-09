@@ -1,10 +1,11 @@
-body{
+html, body{
   font-size: 17px;
-  color: white
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-
-
 
 
 /* header */
@@ -20,7 +21,6 @@ header img{
   position: fixed !important;
   background-color: rgba(229, 231, 232, 0.3);
   padding-left: 20%;
-  padding-top: 0.5%;
 }
 
 #logo{
@@ -32,15 +32,15 @@ header img{
 }
 
 #headerMenu{
-  margin-right: 20%;
+  margin-right: 30%;
   font-size: 18px;
-  padding-top: 1%;
+  padding-top: 2%;
   text-align:center;
   cursor: pointer;
 }
 
 #headerMenu a:hover{
-  color: #1e2023;
+  color: rgb(5, 15, 143);
 }
 
 #headerMenu:after{
@@ -83,8 +83,6 @@ header img{
 /* Projekte */
 
 #projekte{
-
-  width: 100%;
   height: 1000px;
   background-color: #1e2023;
   margin-top: 350px;
@@ -100,41 +98,34 @@ header img{
   cursor: pointer;
   perspective: 480px;
   overflow: hidden;
-
-  white-space: nowrap;
 }
 
 .projekt1Size{
-  width: 25%;
+  width: 18.93%;
   padding-left:6%;
 }
 
 .projekt2Size{
-  width: 50%;
+  width: 34.9%;
   padding-left: 15%;
 }
 
 .projekt:hover{
-  border:none;
-  background-color: gray;
+  background-color: rgb(5, 15, 143);
 }
 
 .projekt p{
   color: white;
   font-size: 50px;
-
 }
 
 .cube{
   position: absolute;
-
 }
 
 .cube-front{
   top: 80px;
   transition: top 1s, opacity 1s;
-
-
 }
 
 .cube-bottom{
@@ -148,11 +139,11 @@ header img{
 /* Kontakt */
 
 #kontakt{
-  padding-top: 200px;
+  padding-top: 300px;
   margin-bottom: 2%;
   position: relative;
   width: 100%;
-  height: 900px;
+  height: 600px;
   text-align:center;
 
 }
@@ -176,18 +167,18 @@ header img{
 }
 
 .kontaktIcon{
-  height: 100px;
+  height: 65px;
   width: 100px;
-  background-color: gray;
+  background-color: #1e2023;
   border-radius: 50%;
   margin-left: 51px;
   padding-top: 35px;
 }
 
-.kontaktauswahl:hover{
-  cursor: pointer;
-  border:  2px solid white;
+.kontaktIcon:hover{
+  background-color: rgb(5, 15, 143);
 }
+
 
 
 
@@ -198,13 +189,13 @@ header img{
 #herokuSite{
   height: 3000px;
   position: relative;
-  padding-top: 5%;
+  padding-top: 7%;
   padding-left: 20%;
 }
 
 
 #herokuProjekte{
-  margin-top: 6%;
+  margin-top: 8%;
   width: 80%;
   height: 200px;
 }
