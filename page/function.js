@@ -17,7 +17,7 @@ const projekt={
   },
   "five":{
     "class": ".projektLebenslauf",
-    "url": ""
+    "url": "/files/Lebenslauf v2.1 .pdf"
   }
 }
 
@@ -54,3 +54,4 @@ $(".projektHeroku").click(function(){window.location.href = projekt.one.url})
 weiterleitung(projekt.two.class,projekt.two.url);
 weiterleitung(projekt.three.class, projekt.three.url);
 weiterleitung(projekt.four.class, projekt.four.url);
+weiterleitung(projekt.five.class, projekt.five.url);

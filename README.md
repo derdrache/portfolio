@@ -1,3 +1,1 @@
-to do:
-
-Kontakt weiter ausbauen
+My Portfolio page is in work.
